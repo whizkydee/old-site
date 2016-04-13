@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+$basefont: "Lora", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+$font-alt: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
+$font_alt: $font-alt;
+$code_font: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+$code_font_alt: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
+$icons: webtwicons;
+$icon: $icons;
+$white: #fff;
+$off_white: #f9f9f9;
+$black: #000;
+$basecolor: #6699cc;
+$base-color: $basecolor;
+$base_color: $basecolor;
+$one: 1px;
+$two: 2px;
+$three: $one + $two;
+$five: $three + $two;
+$seven: $five + $two;
+$full: 100%;
+$border: rgba(0, 0, 0, .06);
+$solid: solid;
+$solid_one: 1px $solid;
+$ui_border: $solid_one $border;
+$facebook: #3B599A;
+$twitter: #50ABF1;
+$google: #DC4E41;
+$github: #464646;
+$tumblr: #36465d;
+$pinterest: #BD081C;
+$linkedin: #0077B5;
+$youtube: #CD201F;
+$instagram: #125688;
+$email: #616161;
+$grey: #EEEEEE;
+$gray: $grey;
+$text-color: #597488;
+$title-color: #3f5261;
