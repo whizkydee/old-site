@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<div class="home">
+<section class="main_content">
+   <header class="site_header">
+      <h2>Olaolu Olawuyi</h2>
 
-  <h1 class="page-heading">Posts</h1>
+      <nav class="site_nav">
+         <a href="/blog">Blog</a>
+         <a href="/about">About</a>
+         <a href="/projects">Projects</a>
+         <a href="mailto:whizkydee@gmail.com?subject=Hello&content=Hi">Contact</a>
+      </nav>
+   </header>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+   <img src="null" />
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+   <p class="about_text">
+      Hi. Im Olaolu. A Front-End developer and UX Designer passionate
+      about the web, tech, creative design and music
+   </p>
+</section>

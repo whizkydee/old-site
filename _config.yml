@@ -1,8 +1,10 @@
-title: Olaolu &ndash;
+# Site settings
+port: 2020
+title: Olaolu Olawuyi
 email: whiskydee@gmail.com
-description:
-baseurl: "/blog"
+description: A community focused on code tweaks, articles and tutorials for newbie and professional developers.
+# baseurl: "http://webtwic.com"
+# url: "http://webtwic.com" # the base hostname & protocol for your site
 twitter_username: whizkydee
 github_username:  whizkydee
-
-markdown: kramdown
+facebook_name: whizkydee
