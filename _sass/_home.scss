@@ -1,0 +1,44 @@
+.site_header {
+   vertical-align: middle;
+   position: relative;
+   padding: 10px 20px;
+   display: block;
+   background: #000;
+   .name {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      text-align: left;
+      margin: 0;
+      a {
+         font-family: $font-alt;
+         font-weight: 200;
+      }
+   }
+   nav {
+      display: inline-block;
+      position: relative;
+      float: right;
+      margin: 5px;
+      li {
+         position: relative;
+         display: inline-block;
+         text-transform: uppercase;
+         margin-right: 5px;
+         letter-spacing: .03em;
+         &:last-child {
+            margin-right: 0;
+         }
+         a {
+            position: relative;
+         }
+      }
+   }
+}
+
+.about_content {
+   position: relative;
+   text-align: center;
+   display: block;
+}
