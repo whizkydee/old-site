@@ -5,11 +5,11 @@
 
   <body class="personal {% if page.body-class %}{{ page.body-class }}{% endif %}">
 
-    {% include header.html %}
-
     <div class="page-content">
       <div class="wrapper">
          <section class="main_content">
+            {% include header.html %}
+
             {{ content }}
          </section>
       </div>
