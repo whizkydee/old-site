@@ -1,13 +1,9 @@
 @-ms-viewport {
    width: device-width;
 }
-
-
 @viewport {
    width: device-width;
 }
-
-
 ::-webkit-selection {
    background: #252525;
    color: $off_white;
@@ -93,14 +89,4 @@ body {
    margin: 0 auto;
    padding: 0em;
    background: #F3F4F6;
-}
-
-main {
-   &.site-content {
-      max-width: 1279px;
-      width: 94%;
-      .site-wrapper {
-         margin-bottom: 50px;
-      }
-   }
 }
