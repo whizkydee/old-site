@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="personal {% if page.body-class %}{{ page.body-class }}{% endif %}">
+<body class="personal {% if page.body-class %}{{ page.body-class }}{% endif %}">
 
-    <div class="page-content">
-      <div class="wrapper">
-         <section class="main_content">
+   <div class="page-content">
+      <section class="main_content">
+         <section class="about_content" style="background-image: url(img/bg.jpg); background-repeat: no-repeat; background-position: fixed; background-size: cover;">
             {% include header.html %}
 
             {{ content }}
          </section>
-      </div>
-    </div>
+      </section>
+   </div>
 
-    {% include footer.html %}
+   {% include footer.html %}
 
-  </body>
+</body>
 
 </html>

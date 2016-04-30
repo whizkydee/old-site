@@ -3,7 +3,6 @@
    position: relative;
    padding: 10px 20px;
    display: block;
-   background: #000;
    .name {
       position: relative;
       display: inline-block;
@@ -32,13 +31,40 @@
          }
          a {
             position: relative;
+            color: $off_white;
          }
       }
    }
 }
 
-.about_content {
+.main_content {
+   height: 500px;
+}
+.about_section {
+   padding: 20px 0;
+   font-family: $font-alt;
    position: relative;
    text-align: center;
    display: block;
+   > {
+      img {
+         border: 2px solid $off_white;
+         text-align: center;
+         @extend .round;
+         width: 130px;
+         height: 130px;
+      }
+      p {
+         font-family: $basefont;
+         text-align: center;
+         max-width: 450px;
+         margin: 10px auto;
+         color: $off_white;
+         font-size: 1.02em;
+         a {
+            color: inherit;
+            border-bottom: 1px dotted;
+         }
+      }
+   }
 }
