@@ -56,15 +56,20 @@
          height: 130px;
       }
       p {
-         font-family: $basefont;
+         font-family: 'Lora', $basefont;
+         font-style: italic;
          text-align: center;
-         max-width: 450px;
+         max-width: 60%;
          margin: 10px auto;
          color: $off_white;
-         font-size: 1.02em;
+         font-size: 1.4em;
          a {
-            color: inherit;
             border-bottom: 1px dotted;
+            font-family: inherit;
+            color: inherit;
+         }
+         b {
+            font-family: inherit;
          }
       }
    }
