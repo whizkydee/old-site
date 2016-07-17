@@ -8,13 +8,12 @@
    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% endif %}" />
    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" id="main-stylesheet" type="text/css"/>
-
-   <script src="../js/libs/jquery.min.js" charset="utf-8" type="text/javascript" id="jquery-script"></script>
-
+   <link rel="stylesheet" href="https://use.fontawesome.com/b32e27b306.css">
    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
    <link rel="next" href="http://webtwic.com/page/2/" />
 
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+   <script src="../js/libs/jquery.min.js" charset="utf-8" type="text/javascript" id="jquery-script"></script>
+
    <script src="../js/script.js" charset="utf-8" type="text/javascript" id="app-script"></script>
 </head>
