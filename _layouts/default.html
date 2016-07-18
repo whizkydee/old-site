@@ -7,10 +7,14 @@
 
    <div class="page-content">
       <section class="main_content">
-         <section class="about_content" style="background-image: url(img/bg2.jpg); background-repeat: no-repeat; background-position: fixed; background-size: cover;">
-            {% include header.html %}
+         <section class="about_content">
+            <div class="skew">
+               <div class="innr">
+                  {% include header.html %}
 
-            {{ content }}
+                  {{ content }}
+               </div>
+            </div>
          </section>
       </section>
    </div>
