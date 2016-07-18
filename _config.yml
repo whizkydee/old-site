@@ -3,8 +3,8 @@ port:                   2020
 title:                  Olaolu Olawuyi
 email:                  whiskydee@gmail.com
 description:            Olaolu Olawuyi &ndash; Front-End Developer & UX Designer in Lagos.
-baseurl:                "http://whizkydee.github.io"
-url:                    "http://whizkydee.github.io"
+# baseurl:                "http://whizkydee.github.io"
+# url:                    "http://whizkydee.github.io"
 
 twitter_username:       whizkydee
 github_username:        whizkydee
@@ -12,5 +12,6 @@ facebook_name:          whizkydee
 
 facebook_url:           https://facebook.com/olaolu.olawuyi.whiskydee.35
 twitter_url:            https://twitter.com/whizkydee
+instagram_url:          https://instagram.com/whizkydee
 github_url:             https://github.com/whizkydee
 codepen_url:            https://codepen.io/whizkydee
