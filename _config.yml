@@ -1,10 +1,11 @@
 # Site settings
-port: 2020
-title: Olaolu Olawuyi
-email: whiskydee@gmail.com
-description: A community focused on code tweaks, articles and tutorials for newbie and professional developers.
-# baseurl: "http://webtwic.com"
-# url: "http://webtwic.com" # the base hostname & protocol for your site
+port:                   2020
+title:                  Olaolu Olawuyi
+email:                  whiskydee@gmail.com
+description:            Olaolu Olawuyi &ndash; Front-End Developer & UX Designer in Lagos.
+baseurl:                "http://whizkydee.github.io"
+url:                    "http://whizkydee.github.io"
+
 twitter_username:       whizkydee
 github_username:        whizkydee
 facebook_name:          whizkydee
