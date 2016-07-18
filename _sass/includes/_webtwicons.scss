@@ -8,14 +8,6 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 
-   &.newspaper-icon:before {
-      content: "\f1ea";
-   }
-
-   &.user-icon:before {
-      content: "\f007";
-   }
-
    &.calendar-icon:before {
       content: "\f073";
    }
@@ -30,6 +22,9 @@
 
    &.comments-o:before {
       content: "\f0e6";
+   }
+   &.codepen-icon:before {
+      content: "\f1cb";
    }
 
    &.facebook-icon:before {
