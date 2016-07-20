@@ -41,13 +41,27 @@
 }
 
 .about_content {
-   background-image: url(../img/bg2.jpg);
-   background-repeat: no-repeat;
-   background-position: fixed;
-   background-size: cover;
    position: relative;
-   height: 500px;
+   height: 570px;
    z-index: 1;
+   &:before {
+      @include transform(skewY(-5deg));
+      -webkit-backface-visibility: hidden;
+      backface-visibility: initial;
+      background: #00bcd4 url(../img/bg2.jpg);
+      background-repeat: no-repeat;
+      -webkit-transform-origin: left center;
+      transform-origin: left center;
+      @include background-size(cover);
+      position: absolute;
+      overflow: visible;
+      height: 570px;
+      content: '';
+      width: 100%;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+   }
 }
 
 .about_section {
@@ -90,7 +104,7 @@
    }
 }
 
-.my_titles {
+.my_interests {
    margin-bottom: 25px;
    position: relative;
    color: $off_white;
