@@ -89,12 +89,14 @@
    height: 320px;
    display: block;
    > {
-      img {
+      .avatar {
+         background: url('../img/img.jpg') no-repeat;
          border: 2px solid $off_white;
+         display: inline-block;
          text-align: center;
          @extend .round;
-         width: 130px;
-         height: 130px;
+         width: 120px;
+         height: 124px;
       }
       p {
          font-family: $basefont;
