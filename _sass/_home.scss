@@ -58,6 +58,7 @@
 }
 
 .about_content {
+   @include filter(brightness, 100%);
    position: relative;
    height: 570px;
    z-index: 1;
