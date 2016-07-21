@@ -31,7 +31,7 @@
             margin-right: 0;
          }
          a {
-            @include transition(color .3s ease-in-out .02s);
+            @include transition(color .3s linear);
             font-size: 1.12em;
             position: relative;
             color: $white;
