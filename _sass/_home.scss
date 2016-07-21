@@ -5,14 +5,14 @@
    padding: 10px 20px;
    display: block;
    .name {
-      position: relative;
-      display: inline-block;
       text-transform: uppercase;
+      display: inline-block;
       letter-spacing: .03em;
+      position: relative;
       text-align: left;
       margin: 0;
       a {
-         font-family: $basefont;
+         font-family: $font_alt;
          font-weight: 200;
          color: $white;
       }
@@ -23,16 +23,15 @@
       float: right;
       margin: 5px;
       li {
-         position: relative;
-         display: inline-block;
-         text-transform: uppercase;
-         margin-right: 5px;
          letter-spacing: .03em;
+         display: inline-block;
+         position: relative;
+         margin-right: 5px;
          &:last-child {
             margin-right: 0;
          }
          a {
-            font-size: .96em;
+            font-size: 1.12em;
             position: relative;
             color: $white;
          }
