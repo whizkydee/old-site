@@ -90,13 +90,14 @@
    display: block;
    > {
       .avatar {
-         background: url('../img/img.jpg') no-repeat;
+         background: url('../img/avatar.jpg') no-repeat;
+         @include filter(grayscale, ($full - 10%));
          border: 2px solid $off_white;
          display: inline-block;
          text-align: center;
          @extend .round;
-         width: 120px;
          height: 124px;
+         width: 120px;
       }
       p {
          font-family: $basefont;
