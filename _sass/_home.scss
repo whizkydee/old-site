@@ -31,9 +31,27 @@
             margin-right: 0;
          }
          a {
+            @include transition(color .3s ease-in-out .02s);
             font-size: 1.12em;
             position: relative;
             color: $white;
+            &:before {
+               background: transparentize( lighten($basecolor, 5%), .2);
+               @include transition(transform .22s ease-in-out);
+               @include transform(scaleX(0));
+               position: absolute;
+               content: "";
+               height: 3px;
+               top: $full;
+               left: 0;
+               right: 0;
+            }
+            &:hover {
+               color: $basecolor;
+               &:before {
+                  @include transform(scaleX(.5));
+               }
+            }
          }
       }
    }
@@ -47,7 +65,7 @@
       @include transform(skewY(-5deg));
       -webkit-backface-visibility: hidden;
       backface-visibility: initial;
-      background: #00bcd4 url(../img/bg2.jpg);
+      background: $basecolor url(../img/bg2.jpg);
       background-repeat: no-repeat;
       -webkit-transform-origin: left center;
       transform-origin: left center;
