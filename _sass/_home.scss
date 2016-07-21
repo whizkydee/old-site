@@ -80,7 +80,7 @@
          height: 130px;
       }
       p {
-         font-family: 'LoraItalic', $basefont;
+         font-family: $basefont;
          margin: 10px auto 20px;
          text-align: center;
          max-width: 71.2%;
@@ -111,7 +111,7 @@
    font-size: 1.2em;
    display: block;
    > span {
-      font-family: 'LoraItalic', $basefont;
+      font-family: $basefont;
       letter-spacing: .05em;
       position: relative;
       color: $off_white;
