@@ -112,6 +112,7 @@
    display: block;
    > span {
       font-family: 'LoraItalic', $basefont;
+      letter-spacing: .05em;
       position: relative;
       color: $off_white;
    }
