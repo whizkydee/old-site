@@ -1,18 +1,23 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="en" id="home">
 
 {% include head.html %}
 
 <body class="personal {% if page.body-class %}{{ page.body-class }}{% endif %}">
 
-   <section class="page-content">
-      <section class="about_content" data-style>
-         <div class="innr">
-            {% include header.html %}
+   <section class="page_content" data-style>
 
+      <div class="innr">
+
+         {% include header.html %}
+
+         <section class="about_section">
             {{ content }}
-         </div>
-      </section>
+         </section>
+
+      </div>
+
    </section>
 
 </body>
