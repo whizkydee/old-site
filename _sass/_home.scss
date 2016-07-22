@@ -58,27 +58,16 @@
 }
 
 .about_content {
+   background: $basecolor url(../img/hero.png) no-repeat;
    @include filter(brightness, 100%);
+   @include background-size(cover);
    position: relative;
-   height: 570px;
-   z-index: 1;
-   &:before {
-      @include transform(skewY(-5deg));
-      -webkit-backface-visibility: hidden;
-      backface-visibility: initial;
-      background: $basecolor url(../img/hero.png);
-      background-repeat: no-repeat;
-      -webkit-transform-origin: left center;
-      transform-origin: left center;
-      @include background-size(cover);
-      position: absolute;
-      overflow: visible;
-      height: 570px;
-      content: '';
-      width: 100%;
-      z-index: -1;
-      bottom: 0;
-      left: 0;
+   min-width: 100%;
+   height: 659px;
+   width: 100%;
+   z-index: 9;
+   &[data-style] {
+      height: 665px;
    }
 }
 
