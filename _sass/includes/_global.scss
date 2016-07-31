@@ -5,27 +5,27 @@
    width: device-width;
 }
 ::-webkit-selection {
-   background: #252525;
+   background: $basecolor;
    color: $off_white;
 }
 ::-moz-selection {
-   background: #252525;
+   background: $basecolor;
    color: $off_white;
 }
 ::-ms-selection {
-   background: #252525;
+   background: $basecolor;
    color: $off_white;
 }
 :-ms-selection {
-   background: #252525;
+   background: $basecolor;
    color: $off_white;
 }
 ::-o-selection {
-   background: #252525;
+   background: $basecolor;
    color: $off_white;
 }
 ::selection {
-   background: #252525;
+   background: $basecolor;
    color: $off_white;
 }
 
@@ -74,8 +74,15 @@ html {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    clear: both;
-   &._hidden {
-      display: block !important;
+   height: $full;
+   width: $full;
+   &#home {
+      background: $basecolor url(../img/hero.png) no-repeat center center;
+      @include filter(brightness, $full);
+      @include background-size(cover);
+      background-position-y: 54px;
+      position: relative;
+      overflow: hidden;
    }
 }
 
@@ -83,10 +90,9 @@ body {
    font-family: $basefont;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   clear: both;
-   width: $full;
    line-height: 1.5;
    margin: 0 auto;
    padding: 0em;
-   background: #F3F4F6;
+   width: $full;
+   clear: both;
 }

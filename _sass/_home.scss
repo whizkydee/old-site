@@ -1,9 +1,9 @@
 .site_header {
-   @include box-shadow(0px 0px 3px rgba(0, 0, 0, .2));
    vertical-align: middle;
    position: relative;
    padding: 10px 20px;
    display: block;
+   height: 54px;
    .name {
       text-transform: uppercase;
       display: inline-block;
@@ -36,18 +36,18 @@
             position: relative;
             color: $white;
             &:before {
-               background: transparentize( lighten($basecolor, 5%), .2);
-               @include transition(transform .22s ease-in-out);
+               @include transition(transform .15s ease-in-out);
                @include transform(scaleX(0));
+               background: $off_white;
                position: absolute;
+               height: .1em;
                content: "";
-               height: 3px;
                top: $full;
-               left: 0;
                right: 0;
+               left: 0;
             }
             &:hover {
-               color: $basecolor;
+               color: lighten($basecolor, 10%);
                &:before {
                   @include transform(scaleX(.5));
                }
@@ -57,17 +57,16 @@
    }
 }
 
-.about_content {
-   background: $basecolor url(../img/hero.png) no-repeat;
-   @include filter(brightness, 100%);
-   @include background-size(cover);
+.page_content {
    position: relative;
-   min-width: 100%;
-   height: 659px;
-   width: 100%;
-   z-index: 9;
-   &[data-style] {
-      height: 665px;
+   min-height: $full;
+   min-width: $full;
+   width: $full;
+   .innr {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      height: $full;
    }
 }
 
@@ -75,9 +74,17 @@
    font-family: $font-alt;
    position: relative;
    text-align: center;
-   margin: 30px 0;
-   height: 320px;
+   margin: 15vh auto;
    display: block;
+   height: $full;
+   width: $full;
+   > .about_content {
+      width: $full;
+      margin: 0 auto;
+   }
+}
+
+.about_content {
    > {
       .avatar {
          background: url('../img/avatar.jpg') no-repeat;
@@ -92,8 +99,8 @@
       p {
          font-family: $basefont;
          margin: 10px auto 20px;
+         width: ($full - 30%);
          text-align: center;
-         max-width: 71.2%;
          color: $off_white;
          font-size: 1.32em;
          a {
@@ -136,7 +143,7 @@
       background: transparentize($white, .9);
       border: .124em solid $grey;
       position: relative;
-      padding: .4em .7em;
+      padding: .6em .9em;
       margin-right: 5px;
       &:last-child {
          margin-right: 0;
