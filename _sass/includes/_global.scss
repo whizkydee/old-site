@@ -65,20 +65,19 @@
 }
 
 html {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
    -webkit-text-size-adjust: $full;
    -ms-text-size-adjust: $full;
+   font-family: $basefont;
    overflow-y: scroll;
    overflow-x: hidden;
    font-size: $full;
-   font-family: $basefont;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   clear: both;
    height: $full;
    width: $full;
+   clear: both;
    &#home {
       background: $basecolor url(../img/hero.png) no-repeat center center;
-      @include filter(brightness, $full);
       @include background-size(cover);
       background-position-y: 54px;
       position: relative;
@@ -87,9 +86,9 @@ html {
 }
 
 body {
-   font-family: $basefont;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+   font-family: $basefont;
    line-height: 1.5;
    margin: 0 auto;
    padding: 0em;
