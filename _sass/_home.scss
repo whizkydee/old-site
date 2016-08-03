@@ -10,7 +10,7 @@
       letter-spacing: .03em;
       position: relative;
       text-align: left;
-      margin: 0;
+      margin: -2px 0;
       a {
          font-family: $font_alt;
          font-weight: 200;
@@ -142,8 +142,8 @@
       @include transition(background .3s ease-in-out);
       background: transparentize($white, .9);
       border: .124em solid $grey;
+      padding: .64em .89em;
       position: relative;
-      padding: .6em .9em;
       margin-right: 5px;
       &:last-child {
          margin-right: 0;
