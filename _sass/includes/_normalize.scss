@@ -1,10 +1,24 @@
 /** Start Normalize.css */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+figcaption,
+article,
+details,
+section,
+footer,
+figure,
+header,
+hgroup,
+aside,
+main,
+menu,
+nav,
+summary {
    display: block;
 }
 
-audio, canvas, progress {
+audio,
+canvas,
+progress {
    display: inline-block;
    vertical-align: baseline;
 }
@@ -21,7 +35,8 @@ audio:not([controls]) {
    height: 0;
 }
 
-[hidden], template {
+[hidden],
+template {
    display: none;
 }
 
@@ -50,7 +65,11 @@ pre {
    overflow: auto;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
    color: inherit;
    font: inherit;
    margin: 0;
@@ -62,29 +81,35 @@ button {
 }
 
 input {
-   &[type="button"], &[type="reset"], &[type="submit"] {
+   &[type="button"],
+   &[type="reset"],
+   &[type="submit"] {
       -webkit-appearance: button;
       cursor: pointer;
    }
 }
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
    cursor: default;
 }
 
-[type="submit"], [type="reset"], [type="button"], [type="file"] {
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="file"] {
    @include box-shadow(0px 0px 5px rgba(0, 0, 0, .1));
    border-bottom: 4px solid darken($basecolor, 5%);
-   @extend .radius-alt;
-   font-weight: bold;
-   padding: 15px 20px;
-   color: $white;
-   text-align: center;
    background: $basecolor;
+   @extend .radius-alt;
+   padding: 15px 20px;
+   text-align: center;
+   font-weight: bold;
    cursor: pointer;
-   border-top: 0;
    border-right: 0;
    border-left: 0;
+   border-top: 0;
+   color: $white;
 }
 
 button::-moz-focus-inner {
@@ -98,7 +123,8 @@ input {
       padding: 0;
    }
    line-height: normal;
-   &[type="checkbox"], &[type="radio"] {
+   &[type="checkbox"],
+   &[type="radio"] {
       padding: 0;
    }
    &[type="number"] {
@@ -116,9 +142,9 @@ input {
 }
 
 fieldset {
+   padding: .35em .625em .75em;
    border: $solid_one #c0c0c0;
    margin: 0 2px;
-   padding: .35em .625em .75em;
 }
 
 legend {
@@ -192,7 +218,20 @@ input {
    font-family: $basefont;
 }
 
-[type="search"], [type="text"], [type="email"], [type="number"], [type="password"], [type="tel"], [type="week"], [type="datetime"], [type="date"], [type="time"], [type="datetime-local"], [type="month"], [type="url"], input, textarea {
+input[type="datetime-local"],
+input[type="password"],
+input[type="datetime"],
+input[type="number"],
+input[type="search"],
+input[type="email"],
+input[type="month"],
+input[type="text"],
+input[type="week"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+input[type="url"],
+input, textarea {
    outline: 0 none;
    -webkit-outline: 0 none;
 }

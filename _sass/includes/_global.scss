@@ -1,9 +1,3 @@
-@-ms-viewport {
-   width: device-width;
-}
-@viewport {
-   width: device-width;
-}
 ::-webkit-selection {
    background: $basecolor;
    color: $off_white;
@@ -58,7 +52,8 @@
 * {
    font-family: $basefont;
    @include box-sizing();
-   &:before, &:after {
+   &:before,
+   &:after {
       @include box-sizing();
       font-family: $icon;
    }
@@ -79,7 +74,6 @@ html {
    &#home {
       background: $basecolor url(../img/hero.png) no-repeat center center;
       @include background-size(cover);
-      background-position-y: 54px;
       position: relative;
       overflow: hidden;
    }
