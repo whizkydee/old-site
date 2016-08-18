@@ -32,24 +32,24 @@
          }
          a {
             @include transition(color .3s linear);
-            font-size: 1.12em;
+            padding-bottom: .5em;
             position: relative;
+            font-size: 1.05em;
             color: $white;
             &:before {
-               @include transition(transform .15s ease-in-out);
-               @include transform(scaleX(0));
                background: $off_white;
+               visibility: hidden;
                position: absolute;
-               height: .1em;
+               height: .7em;
                content: "";
                top: $full;
                right: 0;
                left: 0;
             }
             &:hover {
-               color: lighten($basecolor, 10%);
+               // color: lighten($basecolor, 1%);
                &:before {
-                  @include transform(scaleX(.5));
+                  visibility: visible;
                }
             }
          }
