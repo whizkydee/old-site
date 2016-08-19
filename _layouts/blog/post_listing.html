@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog/default
 ---
 
 {% for post in site.posts %}
@@ -35,15 +35,15 @@ layout: default
     </header>
 
     {% if post.excerpt %}
-    <div class="post-description">
+    <section class="post-description">
       <p>
         {{ post.excerpt }}
       </p>
-    </div>
+    </section>
     {% endif %}
 
     {% if post.image.feature %}
-    <div class="post-image-feature">
+    <section class="post-image-feature">
       <img src=
       {% if post.image.feature contains 'http' %}
       "{{ post.image.feature }}"
@@ -55,7 +55,7 @@ layout: default
       {% if post.image.credit %}
       <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
       {% endif %}
-    </div><!-- /.image-wrap -->
+    </section><!-- /.image-wrap -->
     {% endif %}
 
 </section>

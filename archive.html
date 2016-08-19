@@ -1,16 +1,16 @@
 ---
-layout: page
+layout: blog/page
 title:  Archive
 permalink: /archive/
 ---
 
-<div class="archive">
-  <div class="timeline" id="timeline">
+<section class="archive">
+  <section class="timeline" id="timeline">
     {% for post in site.posts %}
     {% unless post.next %}
-    <div class="archive-title">
+    <section class="archive-title">
       <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
-    </div>
+    </section>
 
     <ul>
     {% else %}
@@ -18,18 +18,18 @@ permalink: /archive/
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
     {% if year != nyear %}
     </ul>
-    <div class="archive-title">
+    <section class="archive-title">
       <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
-    </div>
+    </section>
 
     <ul>
     {% endif %}
     {% endunless %}
     <li>
-      <div style="width:60px;float:left;">{{ post.date | date: "%b %-d" }}</div> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+      <section style="width:60px;float:left;">{{ post.date | date: "%b %-d" }}</section> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
 
-  </div>
+  </section>
 
-</div>
+</section>

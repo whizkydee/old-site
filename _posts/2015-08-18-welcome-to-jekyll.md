@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog/post
 title:  "Welcome to Jekyll!"
 date:   2015-08-18 15:07:19
 categories: [tutorial]

@@ -31,12 +31,12 @@
 }
 
 @import
-		"includes/variables",
-		"includes/mixins",
-		"includes/base",
-		"includes/global",
-		"includes/typography",
-		"includes/normalize",
-		"includes/webtwicons";
+		"home/includes/variables",
+		"home/includes/mixins",
+		"home/includes/base",
+		"home/includes/global",
+		"home/includes/typography",
+		"home/includes/normalize",
+		"home/includes/webtwicons";
 
-@import "home";
+@import "home/home";

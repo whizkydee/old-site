@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: blog/default
 ---
 
-  <div id="page">
+  <section id="page">
     <header class="page-header">
       <h2>{{ page.title }}</h2>
     </header>
@@ -12,10 +12,10 @@ layout: default
     </article>
 
 
-  </div><!-- end page content -->
+  </section><!-- end page content -->
 
 
   {% if site.owner.disqus-shortname and page.comments == true %}
-  <div id="disqus_thread"></div>
-  {% include disqus.html %}
+  <section id="disqus_thread"></section>
+  {% include blog/disqus.html %}
   {% endif %}

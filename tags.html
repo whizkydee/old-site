@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blog/page
 title:  Tags
 permalink: /tags/
 ---
@@ -15,9 +15,9 @@ permalink: /tags/
 {% endfor %}
 </ul>
 
-<div class="tag-list">
+<section class="tag-list">
 {% for tag in site.tags %}
-  <div class="tag-group">
+  <section class="tag-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <h5 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h5>
     {% for post in site.tags[tag_name] %}
@@ -25,6 +25,6 @@ permalink: /tags/
       <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
     </article>
     {% endfor %}
-  </div>
+  </section>
 {% endfor %}
-</div>
+</section>

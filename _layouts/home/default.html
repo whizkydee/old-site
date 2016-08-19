@@ -2,21 +2,21 @@
 
 <html lang="en" id="home">
 
-{% include head.html %}
+{% include home/head.html %}
 
 <body class="personal {% if page.body-class %}{{ page.body-class }}{% endif %}">
 
    <section class="page_content">
 
-      <div class="innr">
+      <section class="innr">
 
-         {% include header.html %}
+         {% include home/header.html %}
 
          <section class="about_section">
             {{ content }}
          </section>
 
-      </div>
+      </section>
 
    </section>
 
