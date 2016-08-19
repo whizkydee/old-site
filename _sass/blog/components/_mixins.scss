@@ -178,6 +178,7 @@
    opacity: $opacity;
    $opacity-ie: $opacity * 100;
    filter: alpha(opacity=$opacity-ie);
+}
 
 /* Transformations
 ========================================================================== */
@@ -313,11 +314,11 @@
 }
 
 @mixin filter($filter-type, $filter-amount) {
-  -webkit-filter: $filter-type + unquote( '(#{$filter-amount})' );
-  -moz-filter: $filter-type + unquote( '(#{$filter-amount})' );
-  -ms-filter: $filter-type + unquote( '(#{$filter-amount})' );
-  -o-filter: $filter-type + unquote( '(#{$filter-amount})' );
-  filter: $filter-type + unquote( '(#{$filter-amount})' );
+   -webkit-filter: $filter-type + unquote( '(#{$filter-amount})' );
+   -moz-filter: $filter-type + unquote( '(#{$filter-amount})' );
+   -ms-filter: $filter-type + unquote( '(#{$filter-amount})' );
+   -o-filter: $filter-type + unquote( '(#{$filter-amount})' );
+   filter: $filter-type + unquote( '(#{$filter-amount})' );
 }
 
 @mixin background-size($value: cover) {
