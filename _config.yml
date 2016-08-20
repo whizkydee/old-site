@@ -25,7 +25,7 @@ codepen_url:            https://codepen.io/whizkydee
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Africa/Lagos
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -45,7 +45,7 @@ kramdown:
 #
 owner:
   name: Olaolu Olawuyi
-  avatar: avatar.jpg
+  avatar: blog-avatar.jpg
   job: "Web Developer/UX Designer"
   bio: "Self-taught developer and UX Designer based in Lagos, Nigeria."
   email: whiskydee@gmail.com
