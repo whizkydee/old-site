@@ -1,8 +1,11 @@
 # Jekyll
-_site/
+_site
 .jekyll-metadata
-_drafts
+_drafts/
 
 # Sass
-.sass-cache/
+.sass-cache
 *.css.map
+
+# Node
+node_modules
