@@ -123,7 +123,7 @@
 
 /**
 * Round individual corners (top right, bottom right, bottom left, top left)
-* example: @include border-radius(4px, 0, 0, 4px);
+* example: @include radius(4px, 0, 0, 4px);
 */
 
 @mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
@@ -182,6 +182,14 @@
 
 /* Transformations
 ========================================================================== */
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
 
 /**
 * @include rotate(VALUEdeg);

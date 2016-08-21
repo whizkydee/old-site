@@ -32,7 +32,7 @@
         width: 8px;
         height: 8px;
         background: #bbb;
-        border-radius: 50%;
+        @include radius(50%);
       }
     }
   }

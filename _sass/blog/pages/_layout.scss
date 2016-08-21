@@ -21,7 +21,7 @@
   color: $text-color;
   padding: 0 30px;
   .avatar {
-    border-radius: 50%;
+    @include radius(50%);
     width: 100px;
     height: 100px;
     float: none;
@@ -30,15 +30,16 @@
     display: block;
     color: #F36170;
     font-size: 1.75em;
-    text-transform: lowercase;
+    text-transform: capitalize;
   }
   .author_job {
     display: block;
     color: $secondary;
-    font-size: 0.8em;
-    font-weight: 700;
+    font-size: 0.75em;
+    font-weight: 400;
     text-transform: uppercase;
     margin: -5px auto 10px;
+    letter-spacing: .01em;
   }
   .author_bio {
     font-size: 90%;

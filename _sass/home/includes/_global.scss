@@ -57,10 +57,10 @@
 
 * {
    font-family: $basefont;
-   @include box-sizing();
+   @include box-sizing;
    &:before,
    &:after {
-      @include box-sizing();
+      @include box-sizing;
       font-family: $icon;
    }
 }
