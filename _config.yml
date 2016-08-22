@@ -6,7 +6,7 @@
 port:                   2020
 title:                  Olaolu Olawuyi
 email:                  whiskydee@gmail.com
-description:            Olaolu Olawuyi &ndash; Front-End Developer & UX Designer in Lagos.
+description:            Front-End Developer & UX Designer in Lagos.
 # baseurl:                "http://whizkydee.github.io"
 # url:                    "http://whizkydee.github.io"
 
@@ -47,7 +47,7 @@ owner:
   name: Olaolu Olawuyi
   avatar: blog-avatar.jpg
   job: "Web Developer/UX Designer"
-  bio: "Self-taught developer and UX Designer based in Lagos, Nigeria."
+  bio: "Creative Web Developer and UX Designer based in Lagos, Nigeria."
   email: whiskydee@gmail.com
   disqus-shortname:
   twitter: whizkydee
