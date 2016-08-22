@@ -17,9 +17,9 @@
         <a href="{{ site.url }}/blog">blog</a>
         <span>/</span>
       </li>
-      {% for page in site.pages %} {% if page.title %}
+      {% for page in site.pages %} {% if page.nav %}
       <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        <a href="{{ site.url }}{{ page.url }}">{{ page.nav }}</a>
         {% unless forloop.last %}
           <span>/</span>
         {% endunless %}
