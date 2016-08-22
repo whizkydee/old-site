@@ -9,6 +9,7 @@
   padding: 20px 20px 0;
   @include media-query($small-screen) {
     padding: 50px 30px 0;
+    font-size: 16px;
   }
   @include media-query($medium-screen) {
     height: 100vh;
@@ -45,7 +46,7 @@ section.post {
 
 // Post title
 .post-title {
-
+  font-size: 1.45rem;
 }
 
 .post-title-link {
@@ -60,7 +61,7 @@ section.post {
 
 // Post meta
 .post-meta {
-  font-size: 13px;
+  font-size: .85rem;
   font-weight: bold;
 	.post-date {
 		color: $secondary;
@@ -78,6 +79,10 @@ section.post {
   }
 }
 
+.post-description {
+  font-size: 1rem;
+}
+
 // Read more buttons
 
 a.read-more {
@@ -88,6 +93,7 @@ a.read-more {
 
 #post {
   padding-bottom: 50px;
+  font-size: 1.05em;
   .post-header {
     margin: 0 auto 50px;
   }
