@@ -7,6 +7,27 @@
   @include box-sizing;
 }
 
+::-webkit-selection {
+  background: $primary;
+  color: #333;
+}
+::-moz-selection {
+  background: $primary;
+  color: #333;
+}
+::-ms-selection {
+  background: $primary;
+  color: #333;
+}
+::-o-selection {
+  background: $primary;
+  color: #333;
+}
+::selection {
+  background: $primary;
+  color: #333;
+}
+
 body {
   overflow: hidden;
 }
