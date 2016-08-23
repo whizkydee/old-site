@@ -87,7 +87,7 @@
 .about_content {
    > {
       .avatar {
-         background: url('../img/avatar.jpg') no-repeat;
+         background: url('/img/avatar.jpg') no-repeat;
          @include filter(grayscale, ($full - 95%));
          border: 2px solid $off_white;
          display: inline-block;

@@ -78,7 +78,7 @@ html {
    width: $full;
    clear: both;
    &#home {
-      background: $basecolor url(../img/hero.png) no-repeat center center;
+      background: $basecolor url(/img/hero.png) no-repeat center center;
       @include background-size(cover);
       position: relative;
       overflow: hidden;
