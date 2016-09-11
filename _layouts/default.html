@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <section class="row">
+    <section class="col s12 m3">
+      <section class="table cover">
+        {% include sidebar.html %}
+      </section>
+    </section>
+    <section class="col s12 m9">
+      <section class="post-listing">
+        {{ content }}
+        {% include footer.html %}
+      </section>
+    </section>
+  </section>
+  {% include js.html %}
+</body>
+</html>
