@@ -1,28 +1,74 @@
 ---
-layout: home/default
-body-class: home
 ---
-<section class="about_content">
-   <section class="avatar" data-avatar></section>
-   <p class="about_text">
-      Hi. I'm <b>Olaolu</b>; On the web, I'm <b>whizkydee</b>. A self-taught developer and
-      UX Designer passionate about the web, open source, tech, creative design and music.
-      I'm currently based in <a href="https://maps.google.com" target="_blank" class="location"><span class="webtwicons location-icon"></span>Lagos, Nigeria</a>. Feel free to <a href="/contact"><b>contact me</b></a> on cool stuff.
-   </p>
+<!doctype html>
 
-   <section class="my_interests">
-      <span>Code</span> &bull;
-      <span>Tech</span> &bull;
-      <span>Music</span>
+<html lang="en" id="home">
+
+<head>
+   <title>{{ site.title }} &ndash; {{site.description}}</title>
+   <meta charset="UTF-8" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="author" content="whizkydee | Olaolu Olawuyi" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% endif %}" />
+   <link rel="stylesheet" href="{{ "/css/home.css" | prepend: site.baseurl }}" id="main-stylesheet" type="text/css"/>
+   <link rel="shortcut icon" href="/img/favicon.png" />
+   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
+
+<body class="personal home">
+
+   <section class="page_content">
+
+      <section class="innr">
+
+         <header class="site_header">
+            <h2 class="name"><a href="{{ site.baseurl }}">Olaolu Olawuyi</a></h2>
+
+            <nav class="site_nav">
+               <li><a href="{{ site.baseurl }}">home</a></li>
+               <li><a href="/about">about</a></li>
+               <li><a href="/blog">blog</a></li>
+               <li><a href="/lab">lab</a></li>
+               <li><a href="mailto:whizkydee@gmail.com?subject=Hello&content=Hi">contact</a></li>
+            </nav>
+         </header>
+
+         <section class="about_section">
+            <section class="about_content">
+               <section class="avatar" data-avatar></section>
+               <p class="about_text">
+                  Hi. I'm <b>Olaolu</b>; On the web, I'm <b>whizkydee</b>. A self-taught developer and
+                  UX Designer passionate about the web, open source, tech, creative design and music.
+                  I'm currently based in <a href="https://maps.google.com" target="_blank" class="location"><span class="webtwicons location-icon"></span>Lagos, Nigeria</a>. Feel free to <a href="/contact"><b>contact me</b></a> on cool stuff.
+               </p>
+
+               <section class="my_interests">
+                  <span>Code</span> &bull;
+                  <span>Tech</span> &bull;
+                  <span>Music</span>
+               </section>
+
+               <section class="social_links">
+                  <a href="{{ site.github_url }}" target="_blank"><span class="webtwicons twitter-icon" aria-hidden="true"></span></a>
+
+                  <a href="{{ site.twitter_url }}" target="_blank"><span class="webtwicons github-alt-icon" aria-hidden="true"></span></a>
+
+                  <a href="{{ site.facebook_url }}" target="_blank"><span class="webtwicons facebook-official" aria-hidden="true"></span></a>
+
+                  <a href="{{ site.instagram_url }}" target="_blank"><span class="webtwicons instagram-icon" aria-hidden="true"></span></a>
+               </section>
+            </section>
+
+         </section>
+
+      </section>
+
    </section>
 
-   <section class="social_links">
-      <a href="{{ site.github_url }}" target="_blank"><span class="webtwicons twitter-icon" aria-hidden="true"></span></a>
+</body>
 
-      <a href="{{ site.twitter_url }}" target="_blank"><span class="webtwicons github-alt-icon" aria-hidden="true"></span></a>
-
-      <a href="{{ site.facebook_url }}" target="_blank"><span class="webtwicons facebook-official" aria-hidden="true"></span></a>
-
-      <a href="{{ site.instagram_url }}" target="_blank"><span class="webtwicons instagram-icon" aria-hidden="true"></span></a>
-   </section>
-</section>
+</html>

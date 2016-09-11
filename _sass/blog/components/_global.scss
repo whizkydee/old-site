@@ -4,7 +4,7 @@
 *,
 *:before,
 *:after {
-  @include box-sizing;
+  @include  box-sizing;
 }
 
 ::-webkit-selection {
@@ -79,7 +79,7 @@ table {
     }
   }
   &.highlight > tbody > tr {
-    @include transition(background-color .25s ease);
+    @include  transition(background-color .25s ease);
     &:hover {
       background-color: $table-striped-color;
     }
@@ -123,7 +123,7 @@ h2,
 header,
 input,
 a {
-  @include transition(all .1s ease);
+  @include  transition(all .1s ease);
 }
 
 // Footer

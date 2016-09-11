@@ -31,7 +31,7 @@
             margin-right: 0;
          }
          a {
-            @include transition(color .3s linear);
+            @include  transition(color .3s linear);
             padding-bottom: .5em;
             position: relative;
             font-size: 1.09em;
@@ -88,7 +88,7 @@
    > {
       .avatar {
          background: url('/img/avatar.jpg') no-repeat;
-         @include filter(grayscale, ($full - 95%));
+         @include  filter(grayscale, ($full - 95%));
          border: 2px solid $off_white;
          display: inline-block;
          text-align: center;
@@ -139,7 +139,7 @@
    position: relative;
    a {
       @extend .round;
-      @include transition(background .3s ease-in-out);
+      @include  transition(background .3s ease-in-out);
       background: transparentize($white, .9);
       border: .124em solid $grey;
       padding: .64em .89em;

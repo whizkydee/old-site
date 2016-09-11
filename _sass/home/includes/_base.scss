@@ -11,27 +11,27 @@
 }
 
 .shadow {
-   @include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
+   @include  box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
 }
 
 .shadow-alt {
-   @include box-shadow(0px 8px 6px -6px rgba(0, 0, 0, .1));
+   @include  box-shadow(0px 8px 6px -6px rgba(0, 0, 0, .1));
 }
 
 .radius {
-   @include border-radius(2px);
+   @include  border-radius(2px);
 }
 
 .radius-alt {
-   @include border-radius(3px);
+   @include  border-radius(3px);
 }
 
 .radius-alter {
-   @include border-radius(5px);
+   @include  border-radius(5px);
 }
 
 .circle, .round {
-   @include border-radius($full);
+   @include  border-radius($full);
 }
 
 .btn, .button {
@@ -110,13 +110,13 @@
 
 .visible {
    visibility: visible;
-   @include opacity(1);
+   @include  opacity(1);
 }
 
 .display {
    display: block !important;
    visibility: visible;
-   @include opacity(1);
+   @include  opacity(1);
 }
 
 .webtwicons {
@@ -129,7 +129,7 @@
 }
 
 [class*="btn-"] {
-   @include transition(all .3s ease);
+   @include  transition(all .3s ease);
    position: relative;
    border-width: 0px 0px 2px 0px;
    border-style: solid;

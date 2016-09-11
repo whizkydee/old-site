@@ -1,17 +1,17 @@
 // Post listing
 .post-listing {
-  @include transform(translate3d(0, 0, 1px));
+  @include  transform(translate3d(0, 0, 1px));
   background-color: $white;
   position: absolute;
   top: 400px;
   z-index: 233;
   width: 100%;
   padding: 20px 20px 0;
-  @include media-query($small-screen) {
+  @include  media-query($small-screen) {
     padding: 50px 30px 0;
     font-size: 16px;
   }
-  @include media-query($medium-screen) {
+  @include  media-query($medium-screen) {
     height: 100vh;
     overflow-y: scroll;
     position: initial;
@@ -40,7 +40,7 @@ section.post {
   font-weight: bold;
   color: $info;
   border: 1px solid lighten($text-color, 45%);
-  @include radius(0.4em);
+  @include  radius(0.4em);
   padding: 0.5em 1em;
 }
 
@@ -122,7 +122,7 @@ a.read-more {
 
 .post-navigation {
   background-color: #f6f6f6;
-  @include box-shadow;
+  @include  box-shadow;
 }
 .leonids-icon {
   margin: 0 auto;
@@ -173,7 +173,7 @@ a.read-more {
       margin-right: 0.5em;
       span {
         display: none;
-        @include media-query($small-screen) {
+        @include  media-query($small-screen) {
           display: inline;
           margin: 0.5em;
         }

@@ -57,10 +57,10 @@
 
 * {
    font-family: $basefont;
-   @include box-sizing;
+   @include  box-sizing;
    &:before,
    &:after {
-      @include box-sizing;
+      @include  box-sizing;
       font-family: $icon;
    }
 }
@@ -79,7 +79,7 @@ html {
    clear: both;
    &#home {
       background: $basecolor url(/img/hero.png) no-repeat center center;
-      @include background-size(cover);
+      @include  background-size(cover);
       position: relative;
       overflow: hidden;
    }
