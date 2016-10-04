@@ -2,34 +2,9 @@
  * Global Variables
  */
 
-// Font import
-@font-face {
-   font-family: "Source Sans Pro";
-   src: url('/fonts/SourceSansPro-Regular.ttf') format('treutype');
-   font-weight: 400;
-   font-style: normal;
-}
+// Google font import
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,400italic|Roboto+Mono);
 
-@font-face {
-   font-family: "Source Sans Pro";
-   src: url('/fonts/SourceSansPro-Bold.ttf') format('treutype');
-   font-style: normal;
-   font-weight: 600;
-}
-
-@font-face {
-   font-family: "Source Sans Pro";
-   src: url('/fonts/SourceSansPro-Italic.ttf') format('treutype');
-   font-style: italic;
-   font-weight: 400;
-}
-
-@font-face {
-   font-family: "Roboto Mono";
-   src: url('/fonts/RobotoMono-Regular.ttf') format('treutype');
-   font-style: normal;
-   font-weight: 400;
-}
 // Custom variables
 
 // Spacing
@@ -52,7 +27,7 @@ $font-family-monospace:      "Source Code Pro", "Courier New", monospace !defaul
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             16px !default;
+$font-size-root:             15px !default;
 
 $font-size-base:             $font-size-root !default;
 $font-size-lg:               $font-size-root * 1.25 !default;

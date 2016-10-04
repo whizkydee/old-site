@@ -78,8 +78,8 @@ html {
    width: $full;
    clear: both;
    &#home {
-      background: $basecolor url(/img/hero.png) no-repeat center center;
-      @include background-size(cover);
+      background: $basecolor url('/img/hero.png') no-repeat center center;
+      @include  background-size(cover);
       position: relative;
       overflow: hidden;
    }
@@ -89,7 +89,6 @@ body {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-family: $basefont;
-   background: $basebg;
    line-height: 1.5;
    margin: 0 auto;
    padding: 0em;
