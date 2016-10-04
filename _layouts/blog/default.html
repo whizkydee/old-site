@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+{% include blog/head.html %}
+
+<body>
+  <section class="row">
+    <section class="col s12 m3">
+      <section class="table cover">
+        {% include blog/sidebar.html %}
+      </section>
+    </section>
+    <section class="col s12 m9">
+      <section class="post-listing">
+        {{ content }}
+        {% include blog/footer.html %}
+      </section>
+    </section>
+  </section>
+  {% include blog/js.html %}
+</body>
+</html>

@@ -8,7 +8,7 @@ ul.tag-cloud {
     display: inline-block;
     margin-right: .5em;
     a.post-tag {
-      @include  radius(0.2em);
+      @include radius(0.2em);
     }
   }
 }

@@ -15,7 +15,7 @@
   border-style: solid !important;
   border-color: $primary;
   text-decoration: none !important;
-  @include  radius(2px);
+  @include radius(2px);
   &:visited {
     color: $white;
     border-color: $primary;

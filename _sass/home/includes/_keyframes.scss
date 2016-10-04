@@ -1,4 +1,4 @@
-@include  keyframes(heart) {
+@include keyframes(heart) {
    10% {
        color: #B62F21;
    }
@@ -44,7 +44,7 @@
 }
 
 
-@include  keyframes (spin) {
+@include keyframes (spin) {
    0% {
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -63,7 +63,7 @@
 }
 
 
-@include  keyframes (rotate) {
+@include keyframes (rotate) {
    0% {
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);

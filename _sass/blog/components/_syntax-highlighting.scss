@@ -12,7 +12,7 @@ pre, code {
 }
 code {
   color: #e96900;
-  @include  radius(2px);
+  @include radius(2px);
   white-space: nowrap;
 }
 
@@ -25,7 +25,7 @@ pre { // only apply for code blocks
   line-height: $base-line-height * 0.925;
   word-break: break-all;
   word-wrap: break-word;
-  @include  radius(0);
+  @include radius(0);
   font-weight: normal;
 }
 pre code {

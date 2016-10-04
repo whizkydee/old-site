@@ -1,0 +1,160 @@
+.site_header {
+   vertical-align: middle;
+   position: relative;
+   padding: 10px 20px;
+   display: block;
+   height: 54px;
+   .name {
+      text-transform: uppercase;
+      display: inline-block;
+      letter-spacing: .03em;
+      position: relative;
+      text-align: left;
+      margin: -2px 0;
+      a {
+         font-family: $font_alt;
+         font-weight: 200;
+         color: $white;
+      }
+   }
+   nav {
+      display: inline-block;
+      position: relative;
+      float: right;
+      margin: 5px;
+      li {
+         letter-spacing: .03em;
+         display: inline-block;
+         position: relative;
+         margin-right: 5px;
+         &:last-child {
+            margin-right: 0;
+         }
+         a {
+            @include transition(color .3s linear);
+            padding-bottom: .5em;
+            position: relative;
+            font-size: 1.09em;
+            color: $white;
+            &:before {
+               background: $off_white;
+               visibility: hidden;
+               position: absolute;
+               height: .7em;
+               content: "";
+               top: $full;
+               right: 0;
+               left: 0;
+            }
+            &:hover {
+               // color: lighten($basecolor, 1%);
+               &:before {
+                  visibility: visible;
+               }
+            }
+         }
+      }
+   }
+}
+
+.page_content {
+   position: relative;
+   min-height: $full;
+   min-width: $full;
+   width: $full;
+   .innr {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      height: $full;
+   }
+}
+
+.about_section {
+   font-family: $font-alt;
+   position: relative;
+   text-align: center;
+   margin: 15vh auto;
+   display: block;
+   height: $full;
+   width: $full;
+   > .about_content {
+      width: $full;
+      margin: 0 auto;
+   }
+}
+
+.about_content {
+   > {
+      .avatar {
+         background: url('/img/avatar.jpg') no-repeat;
+         @include filter(grayscale, ($full - 95%));
+         border: 2px solid $off_white;
+         display: inline-block;
+         text-align: center;
+         @extend .round;
+         height: 124px;
+         width: 120px;
+      }
+      p {
+         font-family: $basefont;
+         margin: 10px auto 20px;
+         width: ($full - 30%);
+         text-align: center;
+         color: $off_white;
+         font-size: 1.32em;
+         a {
+            border-bottom: 1px dotted;
+            font-family: inherit;
+            color: inherit;
+         }
+         b {
+            font-family: inherit;
+         }
+         .location {
+            > span {
+               position: relative;
+               margin-right: .18em;
+            }
+         }
+      }
+   }
+}
+
+.my_interests {
+   margin-bottom: 25px;
+   position: relative;
+   color: $off_white;
+   font-size: 1.2em;
+   display: block;
+   > span {
+      font-family: $basefont;
+      letter-spacing: .05em;
+      position: relative;
+      color: $off_white;
+   }
+}
+
+.social_links {
+   position: relative;
+   a {
+      @extend .round;
+      @include transition(background .3s ease-in-out);
+      background: transparentize($white, .9);
+      border: .124em solid $grey;
+      padding: .64em .89em;
+      position: relative;
+      margin-right: 5px;
+      &:last-child {
+         margin-right: 0;
+      }
+      &:hover {
+         border: .124em solid transparentize($white, .5);
+         background: transparentize($white, .5);
+      }
+      span {
+         position: relative;
+         color: $off_white;
+      }
+   }
+}

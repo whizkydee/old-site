@@ -110,7 +110,7 @@
 
 /**
 * Round all corners
-* example: @include  rounded(4px);
+* example: @include rounded(4px);
 */
 
 @mixin radius($radius:4px) {
@@ -123,7 +123,7 @@
 
 /**
 * Round individual corners (top right, bottom right, bottom left, top left)
-* example: @include  radius(4px, 0, 0, 4px);
+* example: @include radius(4px, 0, 0, 4px);
 */
 
 @mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
@@ -138,7 +138,7 @@
 
 /**
 * Box shadow
-* example: @include  box-shadow(HORIZONTAL VERTICAL BLUR COLOR));
+* example: @include box-shadow(HORIZONTAL VERTICAL BLUR COLOR));
 */
 
 @mixin box-shadow($shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)) {
@@ -151,7 +151,7 @@
 
 /**
 * Drop shadow
-* example: @include  drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
+* example: @include drop-shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA);
 */
 
 @mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
@@ -162,7 +162,7 @@
 
 /**
 * Text shadow
-* example: @include  text-shadow(0 2px 3px rgba(0,0,0,.25));
+* example: @include text-shadow(0 2px 3px rgba(0,0,0,.25));
 */
 
 @mixin text-shadow($shadow: 0 2px 3px rgba(0,0,0,.25)) {
@@ -171,7 +171,7 @@
 
 /**
 * Opacity
-* example: @include  opacity(0.5); // 50% opacity
+* example: @include opacity(0.5); // 50% opacity
 */
 
 @mixin opacity($opacity: 0.5) {
@@ -192,7 +192,7 @@
 }
 
 /**
-* @include  rotate(VALUEdeg);
+* @include rotate(VALUEdeg);
 */
 
 @mixin rotate($deg) {
@@ -204,7 +204,7 @@
 }
 
 /**
-* @include  scale(VALUE);
+* @include scale(VALUE);
 */
 
 @mixin scale($ratio) {
@@ -216,7 +216,7 @@
 }
 
 /**
-* @include  skew(VALUE, VALUE);
+* @include skew(VALUE, VALUE);
 */
 
 @mixin skew($x: 0, $y: 0) {
@@ -264,7 +264,7 @@
 }
 
 /**
-* @include  translate(VALUE, VALUE);
+* @include translate(VALUE, VALUE);
 */
 
 @mixin translate($x: 0, $y: 0) {
@@ -292,7 +292,7 @@
 
 /**
 * Box-sizing
-* example: @include  box-sizing(VALUE); //(border-box, padding-box, content-box)
+* example: @include box-sizing(VALUE); //(border-box, padding-box, content-box)
 */
 
 @mixin box-sizing($boxsize: border-box) {

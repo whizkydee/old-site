@@ -5,18 +5,18 @@ Mixins
 
 @mixin border-radius($radius: 2px) {
    -webkit-border-radius: $radius;
-   -moz-border-radius: $radius;
-   -ms-border-radius: $radius;
-   -o-border-radius: $radius;
-   border-radius: $radius;
+      -moz-border-radius: $radius;
+       -ms-border-radius: $radius;
+        -o-border-radius: $radius;
+           border-radius: $radius;
 }
 
 @mixin transform($transform) {
    -webkit-transform: $transform;
-   -moz-transform: $transform;
-   -ms-transform: $transform;
-   -o-transform: $transform;
-   transform: $transform;
+      -moz-transform: $transform;
+       -ms-transform: $transform;
+        -o-transform: $transform;
+           transform: $transform;
 }
 
 @mixin transition($transitions...) {
@@ -26,10 +26,10 @@ Mixins
    }
 
    -webkit-transition: $unfoldedTransitions;
-   -moz-transition: $unfoldedTransitions;
-   -ms-transition: $unfoldedTransitions;
-   -o-transition: $unfoldedTransitions;
-   transition: $unfoldedTransitions;
+      -moz-transition: $unfoldedTransitions;
+       -ms-transition: $unfoldedTransitions;
+        -o-transition: $unfoldedTransitions;
+           transition: $unfoldedTransitions;
 }
 
 @function unfoldTransition ($transition) {
@@ -79,50 +79,50 @@ Mixins
 
 @mixin animation-name($name...) {
    -webkit-animation-name: $name;
-   -moz-animation-name: $name;
-   -o-animation-name: $name;
-   animation-name: $name;
+      -moz-animation-name: $name;
+        -o-animation-name: $name;
+           animation-name: $name;
 }
 
 @mixin animation-duration($duration...) {
    -webkit-animation-duration: $duration;
-   -moz-animation-duration: $duration;
-   -o-animation-duration: $duration;
-   animation-duration: $duration;
+      -moz-animation-duration: $duration;
+        -o-animation-duration: $duration;
+           animation-duration: $duration;
 }
 
 @mixin animation-timing-function($timing...) {
    -webkit-animation-timing-function: $timing;
-   -moz-animation-timing-function: $timing;
-   -o-animation-timing-function: $timing;
-   animation-timing-function: $timing;
+      -moz-animation-timing-function: $timing;
+        -o-animation-timing-function: $timing;
+           animation-timing-function: $timing;
 }
 
 @mixin animation-iteration-count($count...) {
    -webkit-animation-iteration-count: $count;
-   -moz-animation-iteration-count: $count;
-   -o-animation-iteration-count: $count;
-   animation-iteration-count: $count;
+      -moz-animation-iteration-count: $count;
+        -o-animation-iteration-count: $count;
+           animation-iteration-count: $count;
 }
 
 @mixin animation-direction($direction...) {
    -webkit-animation-direction: $direction;
-   -moz-animation-direction: $direction;
-   -o-animation-direction: $direction;
-   animation-direction: $direction;
+      -moz-animation-direction: $direction;
+        -o-animation-direction: $direction;
+           animation-direction: $direction;
 }
 
 @mixin animation-fill-mode($fill...) {
    -webkit-animation-fill-mode: $fill;
-   -moz-animation-fill-mode: $fill;
-   -o-animation-fill-mode: $fill;
-   animation-fill-mode: $fill;
+      -moz-animation-fill-mode: $fill;
+        -o-animation-fill-mode: $fill;
+           animation-fill-mode: $fill;
 }
 @mixin animation-play-state($state...) {
    -webkit-animation-play-state: $state;
-   -moz-animation-play-state: $state;
-   -o-animation-play-state: $state;
-   animation-play-state: $state;
+      -moz-animation-play-state: $state;
+        -o-animation-play-state: $state;
+           animation-play-state: $state;
 }
 
 @mixin animation($animations...) {
@@ -132,10 +132,10 @@ Mixins
    }
 
    -webkit-animation: $unfoldedanimations;
-   -moz-animation: $unfoldedanimations;
-   -ms-animation: $unfoldedanimations;
-   -o-animation: $unfoldedanimations;
-   animation: $unfoldedanimations;
+      -moz-animation: $unfoldedanimations;
+       -ms-animation: $unfoldedanimations;
+        -o-animation: $unfoldedanimations;
+           animation: $unfoldedanimations;
 }
 
 @function unfoldanimation ($animation) {
@@ -161,31 +161,20 @@ Mixins
    @return $unfoldedanimation;
 }
 
-// @mixin animation($animation...) {
-//    -webkit-animation: $animation;
-//    -moz-animation: $animation;
-//    -o-animation: $animation;
-//    animation: $animation;
-// }
-
 @mixin box-shadow($box-shadow) {
    -webkit-box-shadow: $box-shadow;
-   -moz-box-shadow: $box-shadow;
-   -ms-box-shadow: $box-shadow;
-   -o-box-shadow: $box-shadow;
-   box-shadow: $box-shadow;
+      -moz-box-shadow: $box-shadow;
+       -ms-box-shadow: $box-shadow;
+        -o-box-shadow: $box-shadow;
+           box-shadow: $box-shadow;
 }
 
 @mixin text-shadow($text-shadow) {
    -webkit-text-shadow: $text-shadow;
-   -moz-text-shadow: $text-shadow;
-   -ms-text-shadow: $text-shadow;
-   -o-text-shadow: $text-shadow;
-   text-shadow: $text-shadow;
-}
-
-@mixin logo($background-position) {
-   background: url("#{$logo}") $background-position no-repeat;
+      -moz-text-shadow: $text-shadow;
+       -ms-text-shadow: $text-shadow;
+        -o-text-shadow: $text-shadow;
+           text-shadow: $text-shadow;
 }
 
 @mixin opacity($opacity) {
@@ -196,26 +185,26 @@ Mixins
 
 @mixin calc($property, $expression) {
    #{$property}: -webkit-calc(#{$expression});
-   #{$property}: -moz-calc(#{$expression});
-   #{$property}: calc(#{$expression});
+      #{$property}: -moz-calc(#{$expression});
+           #{$property}: calc(#{$expression});
 }
 
 @mixin box-sizing($value: border-box) {
    -webkit-box-sizing: $value;
-   -moz-box-sizing: $value;
-   box-sizing: $value;
+      -moz-box-sizing: $value;
+           box-sizing: $value;
 }
 
 @mixin filter($filter-type, $filter-amount) {
    -webkit-filter: $filter-type + unquote( '(#{$filter-amount})' );
-   -moz-filter: $filter-type + unquote( '(#{$filter-amount})' );
-   -ms-filter: $filter-type + unquote( '(#{$filter-amount})' );
-   -o-filter: $filter-type + unquote( '(#{$filter-amount})' );
-   filter: $filter-type + unquote( '(#{$filter-amount})' );
+      -moz-filter: $filter-type + unquote( '(#{$filter-amount})' );
+       -ms-filter: $filter-type + unquote( '(#{$filter-amount})' );
+        -o-filter: $filter-type + unquote( '(#{$filter-amount})' );
+           filter: $filter-type + unquote( '(#{$filter-amount})' );
 }
 
 @mixin background-size($value: cover) {
    -webkit-background-size: $value;
-   -moz-background-size: $value;
-   background-size: $value;
+      -moz-background-size: $value;
+           background-size: $value;
 }
