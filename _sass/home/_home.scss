@@ -5,15 +5,14 @@
    display: block;
    height: 54px;
    .name {
-      text-transform: uppercase;
       display: inline-block;
       letter-spacing: .03em;
       position: relative;
       text-align: left;
       margin: -2px 0;
       a {
-         font-family: $font_alt;
-         font-weight: 200;
+         font-family: $basefont;
+         font-weight: 100;
          color: $white;
       }
    }
@@ -37,6 +36,8 @@
             font-size: 1.09em;
             color: $white;
             &:before {
+               @include transition(opacity .3s linear);
+               @include opacity(.85);
                background: $off_white;
                visibility: hidden;
                position: absolute;
@@ -50,6 +51,7 @@
                // color: lighten($basecolor, 1%);
                &:before {
                   visibility: visible;
+                  @include opacity(1);
                }
             }
          }
@@ -71,7 +73,6 @@
 }
 
 .about_section {
-   font-family: $font-alt;
    position: relative;
    text-align: center;
    margin: 15vh auto;
