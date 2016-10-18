@@ -1,5 +1,5 @@
 ---
-layout: blog/default
+layout: default
 ---
 
 <a class="btn" href= "{{ site.url }}/blog" >
@@ -31,7 +31,7 @@ layout: blog/default
         {{ page.date | date: "%-d %b %Y" | upcase }}
       </span>
       •
-      {% include blog/read_time.html %}
+      {% include read_time.html %}
     </span>
 
   </header>
@@ -64,5 +64,5 @@ layout: blog/default
 
 {% if site.owner.disqus-shortname and page.comments == true %}
 <section id="disqus_thread"></section>
-{% include blog/disqus.html %}
+{% include disqus.html %}
 {% endif %}
