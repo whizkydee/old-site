@@ -29,13 +29,13 @@
         @include transition(color .3s linear);
         @include border-radius(2px 2px 0);
         text-transform: capitalize;
-        padding: 7px 10px .2em;
+        padding: 7px 10px .5em;
         letter-spacing: .03em;
         position: relative;
         font-size: 1.02em;
         color: $off_white;
         &:before {
-          @include transition(top .3s ease-out, visibility, opacity .3s ease-in-out);
+          @include transition(top .3s ease-out, visibility, opacity, background .3s ease);
           @include opacity(.85);
           background: $off_white;
           visibility: hidden;
@@ -52,6 +52,7 @@
           &:before {
             visibility: visible;
             @include opacity(1);
+            background: #EFEFEF;
             top: 90%;
           }
         }
