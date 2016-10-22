@@ -68,3 +68,8 @@ owner:
   youtube: whizkydee
   flickr: whizkydee
   codepen: whizkydee
+
+# Enable assets compression:
+compress:
+  js:  true
+  css: true
