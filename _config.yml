@@ -73,3 +73,6 @@ owner:
 compress:
   js:  true
   css: true
+
+sass:
+  style: compressed
