@@ -90,7 +90,7 @@
 .about_content {
   > {
     .avatar {
-      background: url('/img/me.jpg') no-repeat;
+      background: url('/img/avatar.jpg') no-repeat;
       filter: sepia(20%) grayscale(30%);
       @include background-size(116px);
       background-position: 1px 0px;
