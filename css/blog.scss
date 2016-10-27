@@ -2,6 +2,12 @@
 ---
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'LoraItalic';
+  src: url('/fonts/Lora-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
 @import "blog/components/mixins";
 
 // Variables

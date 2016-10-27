@@ -3,25 +3,25 @@
 @charset "utf-8";
 
 @font-face {
-   font-family: webtwicons;
-   src: url('/fonts/fontawesome-webfont.eot');
-   src: url('/fonts/fontawesome-webfont.woff2') format("woff2"), url('/fonts/fontawesome-webfont.woff') format("woff"), url('/fonts/fontawesome-webfont.ttf') format("truetype");
-   font-weight: normal;
-   font-style: normal;
+  font-family: webtwicons;
+  src: url('/fonts/fontawesome-webfont.eot');
+  src: url('/fonts/fontawesome-webfont.woff2') format("woff2"), url('/fonts/fontawesome-webfont.woff') format("woff"), url('/fonts/fontawesome-webfont.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'LoraItalic';
-	src: url('/fonts/Lora-Italic.ttf') format('truetype');
-	font-style: italic;
+  font-family: 'LoraItalic';
+  src: url('/fonts/Lora-Italic.ttf') format('truetype');
+  font-style: italic;
 }
 @import
-		"home/includes/variables",
-		"home/includes/mixins",
-		"home/includes/base",
-		"home/includes/global",
-		"home/includes/typography",
-		"home/includes/normalize",
-		"home/includes/webtwicons";
+  "home/includes/variables",
+  "home/includes/mixins",
+  "home/includes/base",
+  "home/includes/global",
+  "home/includes/typography",
+  "home/includes/normalize",
+  "home/includes/webtwicons";
 
 @import "home/home";
