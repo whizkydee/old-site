@@ -8,24 +8,24 @@
 }
 
 ::-webkit-selection {
-  background: $primary;
-  color: #333;
+  background: lighten($basecolor, 6%);
+  color: $text-color;
 }
 ::-moz-selection {
-  background: $primary;
-  color: #333;
+  background: lighten($basecolor, 6%);
+  color: $text-color;
 }
 ::-ms-selection {
-  background: $primary;
-  color: #333;
+  background: lighten($basecolor, 6%);
+  color: $text-color;
 }
 ::-o-selection {
-  background: $primary;
-  color: #333;
+  background: lighten($basecolor, 6%);
+  color: $text-color;
 }
 ::selection {
-  background: $primary;
-  color: #333;
+  background: lighten($basecolor, 6%);
+  color: $text-color;
 }
 
 body {
