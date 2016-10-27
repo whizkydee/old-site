@@ -1,3 +1,9 @@
+.blog-list {
+  float: none !important;
+  @include media-query($small-screen) {
+    margin: 0 auto !important;
+  }
+}
 // Post listing
 .post-listing {
   @include transform(translate3d(0, 0, 1px));
@@ -12,10 +18,16 @@
     font-size: 16px;
   }
   @include media-query($medium-screen) {
-    height: 100vh;
-    overflow-y: scroll;
+    // height: 100vh;
+    // overflow-y: scroll;
     position: initial;
     top: 0;
+  }
+  .blog-selector {
+    display: inline-block;
+    background: #eee;
+    padding: 10px;
+    float: right;
   }
 }
 
