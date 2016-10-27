@@ -146,3 +146,68 @@ footer {
     list-style: none;
   }
 }
+
+// Hero header
+.site_header {
+  vertical-align: middle;
+  position: relative;
+  padding: 10px 20px;
+  display: block;
+  height: 54px;
+  .name {
+    display: inline-block;
+    letter-spacing: .03em;
+    position: relative;
+    text-align: left;
+    margin: -2px 0;
+    a {
+      font-family: $basefont;
+      font-weight: 100;
+      color: $white;
+    }
+  }
+  nav {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 5px;
+    li {
+      letter-spacing: .03em;
+      display: inline-block;
+      position: relative;
+      a {
+        @include transition(color .3s linear);
+        @include border-radius(2px 2px 0);
+        text-transform: capitalize;
+        font-family: $basefont;
+        padding: 7px 10px .5em;
+        letter-spacing: .03em;
+        position: relative;
+        font-size: 1.02em;
+        color: $off_white;
+        &:before {
+          @include transition(top .3s ease-out, visibility, opacity, background .3s ease);
+          @include opacity(.85);
+          background: $off_white;
+          visibility: hidden;
+          position: absolute;
+          height: .7em;
+          content: "";
+          top: 100%;
+          right: 0;
+          left: 0;
+        }
+        &:hover {
+          background: $off_white;
+          color: $basecolor;
+          &:before {
+            visibility: visible;
+            @include opacity(1);
+            background: #EFEFEF;
+            top: 90%;
+          }
+        }
+      }
+    }
+  }
+}
