@@ -3,7 +3,7 @@
  */
 
 // Google font import
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic, );
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700);
 
 // Custom variables
 
@@ -51,7 +51,9 @@ $hr-border-width:             $border-width;
 // Colors
 //
 
-$text-color:       rgba(0, 0, 0, 0.87) !default;
+// $text-color:       rgba(0, 0, 0, 0.87) !default;
+$text-color: darken(#597488, 8%) !default;
+$title-color: #3f5261 !default;
 $background-color: #f5f5f5;
 
 $white:            #fff;
