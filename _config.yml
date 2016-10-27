@@ -70,9 +70,5 @@ owner:
   codepen: whizkydee
 
 # Enable assets compression:
-compress:
-  js:  true
-  css: true
-
 sass:
   style: compressed
