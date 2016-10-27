@@ -17,21 +17,10 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
 
-<body class="personal {% if page.body-class %}{{ page.body-class }}{% endif %}">
+<body class="home">
   <section class="page_content">
     <section class="innr">
-      <header class="site_header">
-        <h2 class="name"><a href="{{ site.baseurl }}"><span>Olaolu</span> Olawuyi</a></h2>
-
-        <nav class="site_nav">
-          <li><a href="{{ site.baseurl }}">home</a></li>
-          <li><a href="/about">about</a></li>
-          <li><a href="/blog">blog</a></li>
-          <li><a href="/lab">lab</a></li>
-          <li><a href="mailto:whizkydee@gmail.com?subject=Hello&content=Hi">contact</a></li>
-        </nav>
-      </header>
-
+    {% include header.html %}
       <section class="about_section">
         <section class="about_content">
           <section class="avatar" data-avatar></section>
@@ -54,15 +43,9 @@
             <a href="{{ site.facebook_url }}" target="_blank"><span class="webtwicons facebook-official" aria-hidden="true"></span></a>
             <a href="{{ site.instagram_url }}" target="_blank"><span class="webtwicons instagram-icon" aria-hidden="true"></span></a>
           </section>
-
         </section>
-
       </section>
-
     </section>
-
   </section>
-
 </body>
-
 </html>
