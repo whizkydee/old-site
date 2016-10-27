@@ -3,15 +3,21 @@
 
 {% include head.html %}
 
-<body>
+<body class="{% if page.body-class %}{{ page.body-class }}{% else %}post{% endif %}">
+  <section class="page_hero">
+    {% include header.html %}
+    <h1 class="heading">{% if page.title %}{{ page.title }}{% endif %}.</h1>
+  </section>
+
   <section class="row">
-    <section class="col s12 m3">
-      <section class="table cover">
-        {% include sidebar.html %}
-      </section>
-    </section>
-    <section class="col s12 m9">
+    <section class="col s12 m9 blog-list">
       <section class="post-listing">
+        {% if page.body-class == 'blog' %}
+        <aside class="blog-selector">
+          <a href="{{ site.baseurl }}/categories/">Categories</a>
+          <a href="{{ site.baseurl }}/archive/">Archive</a>
+        </aside>
+        {% endif %}
         {{ content }}
         {% include footer.html %}
       </section>
