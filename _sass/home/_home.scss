@@ -77,7 +77,7 @@
 .about_section {
   position: relative;
   text-align: center;
-  margin: 15vh auto;
+  margin: 17vh auto;
   display: block;
   height: $full;
   width: $full;
@@ -92,14 +92,20 @@
     .avatar {
       background: url('/img/avatar.jpg') no-repeat;
       filter: sepia(20%) grayscale(30%);
+      @include transition(all .5s ease);
       @include background-size(116px);
-      background-position: 1px 0px;
+      @include border-radius($full);
+      background-position: -1px 0px;
       border: 2px solid $off_white;
       display: inline-block;
       text-align: center;
-      @extend .round;
-      height: 124px;
-      width: 120px;
+      cursor: pointer;
+      height: 120px;
+      width: 115px;
+      &:hover {
+        filter: sepia(30%) grayscale(40%);
+        @include border-radius(2rem 0);
+      }
     }
     p {
       font-family: $basefont;
@@ -127,7 +133,7 @@
 }
 
 .my_interests {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   position: relative;
   color: $off_white;
   font-size: 1.2em;
@@ -143,22 +149,21 @@
 .social_links {
   position: relative;
   a {
-    @extend .round;
     @include transition(background .3s ease-in-out);
-    background: transparentize($white, .9);
-    border: .124em solid $grey;
-    padding: .64em .89em;
+    @include transition(all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s);
+    padding: .62em .9em;
     position: relative;
     margin-right: 5px;
+    @extend .round;
     &:last-child {
       margin-right: 0;
     }
     &:hover {
-      border: .124em solid transparentize($white, .5);
-      background: transparentize($white, .5);
+      // background: transparentize($white, .5);
     }
     span {
       position: relative;
+      font-size: 1.5em;
       color: $off_white;
     }
   }
