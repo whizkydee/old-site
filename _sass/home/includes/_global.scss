@@ -66,23 +66,20 @@
 }
 
 html {
+  background: $basecolor url('/img/hero-image.png') no-repeat;
+  @include animation(bg 60s linear infinite);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: $full;
+  @include background-size(cover);
   -ms-text-size-adjust: $full;
   font-family: $basefont;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;
   font-size: $full;
   height: $full;
   width: $full;
   clear: both;
-  &#home {
-    background: $basecolor url('/img/hero-image.png') no-repeat;
-    @include background-size(cover);
-    position: relative;
-    overflow: hidden;
-  }
 }
 
 body {

@@ -82,8 +82,11 @@
   height: $full;
   width: $full;
   > .about_content {
-    width: $full;
+    @include animation(header .5s 1.25s forwards);
+    @include transform(translate3d(0,0,0));
+    @include opacity(0);
     margin: 0 auto;
+    width: $full;
   }
 }
 
@@ -94,7 +97,7 @@
       filter: sepia(20%) grayscale(30%);
       @include transition(all .5s ease);
       @include background-size(116px);
-      @include border-radius($full);
+      @include border-radius(2rem 0);
       background-position: -1px 0px;
       border: 2px solid $off_white;
       display: inline-block;
@@ -104,7 +107,7 @@
       width: 115px;
       &:hover {
         filter: sepia(30%) grayscale(40%);
-        @include border-radius(2rem 0);
+        @include border-radius($full);
       }
     }
     p {
@@ -149,8 +152,8 @@
 .social_links {
   position: relative;
   a {
-    @include transition(background .3s ease-in-out);
-    @include transition(all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s);
+    // @include transition(background .3s ease-in-out);
+    // @include transition(all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s);
     padding: .62em .9em;
     position: relative;
     margin-right: 5px;
@@ -159,9 +162,12 @@
       margin-right: 0;
     }
     &:hover {
-      // background: transparentize($white, .5);
+      > span {
+        @include transform(scale(1.2));
+      }
     }
     span {
+      @include transition(transform .3s ease);
       position: relative;
       font-size: 1.5em;
       color: $off_white;
