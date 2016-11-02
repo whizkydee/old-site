@@ -163,7 +163,7 @@
     }
     &:hover {
       > span {
-        @include transform(scale(1.2));
+        @include transform(scale(1.02));
       }
     }
     span {
