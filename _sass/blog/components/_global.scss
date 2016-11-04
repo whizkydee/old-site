@@ -10,22 +10,27 @@
 ::-webkit-selection {
   background: lighten($basecolor, 6%);
   color: $text-color;
+  text-shadow: none;
 }
 ::-moz-selection {
   background: lighten($basecolor, 6%);
   color: $text-color;
+  text-shadow: none;
 }
 ::-ms-selection {
   background: lighten($basecolor, 6%);
   color: $text-color;
+  text-shadow: none;
 }
 ::-o-selection {
   background: lighten($basecolor, 6%);
   color: $text-color;
+  text-shadow: none;
 }
 ::selection {
   background: lighten($basecolor, 6%);
   color: $text-color;
+  text-shadow: none;
 }
 
 body {
