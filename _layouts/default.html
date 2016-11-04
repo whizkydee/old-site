@@ -6,7 +6,10 @@
 <body class="{% if page.body-class %}{{ page.body-class }}{% else %}post{% endif %}">
   <section class="page_hero">
     {% include header.html %}
-    <h1 class="heading">{% if page.title %}{{ page.title }}{% endif %}.</h1>
+    <div class="details">
+      <h1 class="heading">{% if page.title %}{{ page.title }}{% endif %}.</h1>
+      <p class="description">{% if page.description %}{{ page.description }}{% endif %}.</p>
+    </div>
   </section>
 
   <section class="row">
