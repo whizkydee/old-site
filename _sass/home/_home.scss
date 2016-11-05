@@ -95,11 +95,11 @@
     .avatar {
       background: url('/img/avatar.jpg') no-repeat;
       filter: sepia(20%) grayscale(30%);
-      @include transition(all .5s ease);
-      @include background-size(116px);
-      @include border-radius(2rem 0);
-      background-position: -1px 0px;
-      border: 2px solid $off_white;
+      @include transition(all 1s ease);
+      @include background-size(112px);
+      @include border-radius($full);
+      background-position: 0px 0px;
+      border: 5px solid $off_white;
       display: inline-block;
       text-align: center;
       cursor: pointer;
@@ -107,7 +107,7 @@
       width: 115px;
       &:hover {
         filter: sepia(30%) grayscale(40%);
-        @include border-radius($full);
+        @include border-radius(2rem 0);
       }
     }
     p {
