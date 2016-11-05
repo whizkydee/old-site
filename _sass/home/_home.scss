@@ -163,11 +163,11 @@
     }
     &:hover {
       > span {
-        @include transform(translateY(-5px));
+        color: lighten($basecolor, 3%);
       }
     }
     span {
-      @include transition(transform .3s ease);
+      @include transition(color .3s linear);
       position: relative;
       font-size: 1.5em;
       color: $off_white;
