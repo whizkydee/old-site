@@ -6,8 +6,8 @@
   <title>{{ site.title }} &ndash; {{site.description}}</title>
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="author" content="whizkydee | Olaolu Olawuyi" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="author" content="Olaolu Olawuyi" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% endif %}" />
@@ -18,27 +18,25 @@
 </head>
 <body class="home">
   <section class="page_content">
-    <section class="innr">
-    {% include header.html %}
-      <section class="about_section">
-        <section class="about_content">
-          <section class="avatar" data-avatar></section>
-          <p class="about_text">
-            Hi. I'm <b>Olaolu</b>. On the web, I'm <b>whizkydee</b>; A self-taught developer and
-            UX Designer passionate about the web, open source, tech, creative design and music.
-            I'm currently based in <a href="https://www.google.com.ng/maps/place/Baruwa+Bus+Stop/@6.6037268,3.2696074,17z/data=!3m1!4b1!4m5!3m4!1s0x103b906469c14f0d:0x5551ee58e2c6209b!8m2!3d6.6037215!4d3.2717961" target="_blank" class="location"><span class="webtwicons location-icon"></span>Lagos, Nigeria</a>. Feel free to <a href="/contact"><b>contact me</b></a> on cool stuff.
-          </p>
-          <section class="my_interests">
-            <span>Code</span> &bull;
-            <span>Tech</span> &bull;
-            <span>Music</span>
-          </section>
-          <section class="social_links">
-            <a href="{{ site.twitter_url }}" target="_blank"><span class="webtwicons twitter-icon" aria-hidden="true"></span></a>
-            <a href="{{ site.github_url }}" target="_blank"><span class="webtwicons github-icon" aria-hidden="true"></span></a>
-            <a href="{{ site.facebook_url }}" target="_blank"><span class="webtwicons facebook-official" aria-hidden="true"></span></a>
-            <a href="{{ site.instagram_url }}" target="_blank"><span class="webtwicons instagram-icon" aria-hidden="true"></span></a>
-          </section>
+  {% include header.html %}
+    <section class="about_section">
+      <section class="about_content">
+        <section class="avatar" data-avatar></section>
+        <p class="about_text">
+          Hi. I'm <b>Olaolu</b>. On the web, I'm <b>whizkydee</b>; A self-taught developer and
+          UX Designer passionate about the web, open source, tech, creative design and music.
+          I'm currently based in <a href="https://www.google.com.ng/maps/place/Baruwa+Bus+Stop/@6.6037268,3.2696074,17z/data=!3m1!4b1!4m5!3m4!1s0x103b906469c14f0d:0x5551ee58e2c6209b!8m2!3d6.6037215!4d3.2717961" target="_blank" class="location"><span class="webtwicons location-icon"></span>Lagos, Nigeria</a>. Feel free to <a href="/contact"><b>contact me</b></a> on cool stuff.
+        </p>
+        <section class="my_interests">
+          <span>Code</span> &bull;
+          <span>Tech</span> &bull;
+          <span>Music</span>
+        </section>
+        <section class="social_links">
+          <a href="{{ site.twitter_url }}" target="_blank"><span class="webtwicons twitter-icon" aria-hidden="true"></span></a>
+          <a href="{{ site.github_url }}" target="_blank"><span class="webtwicons github-icon" aria-hidden="true"></span></a>
+          <a href="{{ site.facebook_url }}" target="_blank"><span class="webtwicons facebook-official" aria-hidden="true"></span></a>
+          <a href="{{ site.instagram_url }}" target="_blank"><span class="webtwicons instagram-icon" aria-hidden="true"></span></a>
         </section>
       </section>
     </section>
