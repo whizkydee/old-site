@@ -8,8 +8,10 @@ title:                  Olaolu Olawuyi
 email:                  whiskydee@gmail.com
 description:            Front-End Developer & UX Designer in Lagos.
 home:                   "http://whizkydee.github.io"
-# baseurl:                "http://whizkydee.github.io"
+baseurl:                ""
 # url:                    "http://whizkydee.github.io"
+
+exclude: ['node_modules']
 
 twitter_username:       whizkydee
 github_username:        whizkydee
@@ -27,17 +29,11 @@ codepen_url:            https://codepen.io/whizkydee
 ####################################
 #
 timezone:          Africa/Lagos
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+excerpt_separator: More...
+permalink: /:year/:month/:title
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+paginate: 10
+paginate_path: "/page:num/"
 
 #
 ###################################
@@ -73,3 +69,16 @@ owner:
 # Enable assets compression:
 sass:
   style: compressed
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+# Gems
+gems: [jekyll-paginate]
