@@ -1,3 +1,3 @@
-document.addEventListerner('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
 }, false);
