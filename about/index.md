@@ -1,5 +1,5 @@
 ---
-description: An in-depth description of my awesome personality
+description: An in-depth description of my personality
 layout: default
 body-class: about
 permalink: /about/
