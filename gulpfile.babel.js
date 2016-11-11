@@ -20,8 +20,8 @@ const jekyllLogger = buffer => {
 };
 
 const paths = {
-  scripts: '_scripts/*.js',
-  dist: 'js/'
+  scripts: 'js/src/*.js',
+  dist: 'js/dist'
 };
 
 browserSync.create();
