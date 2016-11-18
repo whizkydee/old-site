@@ -2,48 +2,10 @@
 ---
 @charset "UTF-8";
 
-@font-face {
-  font-family: 'LoraItalic';
-  src: url('/fonts/Lora-Italic.ttf') format('truetype');
-  font-style: italic;
-}
+// Fonts
+@import "blog/components/fonts";
 
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('/fonts/FiraSans-Italic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('/fonts/FiraSans-Bold.ttf') format('truetype');
-  font-style: italic;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('/fonts/FiraSans-Light.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'Fira Sans';
-  src: url('/fonts/FiraSans-LightItalic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: 200;
-}
-
-
+// Mixins
 @import "blog/components/mixins";
 
 // Variables
