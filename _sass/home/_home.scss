@@ -87,12 +87,12 @@
   top: 50%;
   > {
     .avatar {
-      background: url('/img/avatar.jpg') no-repeat;
-      filter: sepia(20%) grayscale(30%);
+      background: url('/img/avatar.png') no-repeat;
+      filter: sepia(10%) grayscale(10%);
       @include transition(all 1s ease);
-      @include background-size(112px);
+      @include background-size(117px);
       @include border-radius($full);
-      background-position: 0px 0px;
+      background-position: -6px 0px;
       border: 5px solid $off_white;
       display: inline-block;
       text-align: center;
@@ -100,7 +100,7 @@
       height: 120px;
       width: 115px;
       &:hover {
-        filter: sepia(30%) grayscale(40%);
+        filter: sepia(20%) grayscale(20%);
         @include border-radius(2rem 0);
       }
     }
