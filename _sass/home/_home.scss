@@ -99,6 +99,7 @@
       cursor: pointer;
       height: 120px;
       width: 115px;
+      margin: 0;
       &:hover {
         filter: sepia(20%) grayscale(20%);
         @include border-radius(2rem 0);
