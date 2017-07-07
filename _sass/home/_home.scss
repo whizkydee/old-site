@@ -112,6 +112,9 @@
       text-align: center;
       color: $off_white;
       font-size: 1.32em;
+      @include media-query(1282px, 1307px) {
+        width: 74%;
+      }
       a {
         border-bottom: 5px solid transparentize($basecolor, .4);
         @include transition(color .3s linear, border-bottom .1s linear);
